@@ -1,1 +1,58 @@
 /*  your css code here. If applicable */
+/* Container for the entire hero section */
+.hero {
+    display: flex;                /* Use flexbox for layout */
+    justify-content: center;      /* Center items horizontally */
+    align-items: center;          /* Center items vertically */
+    height: 100vh;                /* Full viewport height */
+    background-color: #f4f4f4;    /* Light background color */
+    position: relative;           /* Position relative for absolute positioning of content */
+}
+
+/* Hero image styling */
+.hero-image {
+    width: 100%;                  /* Image takes full width of container */
+    height: 100%;                 /* Image takes full height of container */
+    object-fit: cover;            /* Ensure the image covers the area and clips if necessary */
+    position: absolute;           /* Absolute positioning to fit behind content */
+    top: 0;
+    left: 0;
+}
+
+/* Content container in the hero section */
+.hero-content {
+    z-index: 1;                   /* Ensure content is above the image */
+    text-align: center;           /* Center the text */
+    color: white;                 /* White text color */
+    padding: 20px;                /* Add some padding around the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to contrast the image */
+    border-radius: 10px;          /* Rounded corners for the content box */
+}
+
+/* Heading styling */
+.hero-content h1 {
+    font-size: 48px;              /* Large font size for the heading */
+    margin-bottom: 15px;          /* Add some space below the heading */
+}
+
+/* Paragraph text styling */
+.hero-content p {
+    font-size: 18px;              /* Smaller font size for the paragraph */
+    margin-bottom: 25px;          /* Space below the paragraph */
+}
+
+/* Button styling */
+.explore-btn {
+    padding: 15px 25px;           /* Padding around the button */
+    background-color: #e60023;    /* Pinterest red color */
+    color: white;                 /* White text */
+    border-radius: 50px;          /* Rounded button corners */
+    text-decoration: none;        /* Remove underline from the link */
+    font-size: 18px;              /* Font size for button text */
+    display: inline-block;        /* Make the link behave like a button */
+}
+
+/* Hover effect for the button */
+.explore-btn:hover {
+    background-color: #c1001a;    /* Darker red color on hover */
+}
